@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Horizontal Transposition Cipher</title>
+</head>
+<body>
+    <h1>Horizontal Transposition Cipher</h1>
+    <form method="POST">
+        <label for="text">Text:</label>
+        <input type="text" name="text" id="text" required>
+        <br>
+        <label for="key">Key:</label>
+        <input type="number" name="key" id="key" required>
+        <br>
+        <label for="operation">Operation:</label>
+        <select name="operation" id="operation">
+            <option value="encrypt">Encrypt</option>
+            <option value="decrypt">Decrypt</option>
+        </select>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    <h2>Result:</h2>
+    <p>{{ result }}</p>
+</body>
+</html>
